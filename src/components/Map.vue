@@ -41,7 +41,6 @@ const isDev = import.meta.env.DEV;
 const onClick = (marker) => {
     view.value.setCenter(marker.position);
     emit("markerClick", marker.id);
-    // console.log(marker)
 }
 
 onMounted(() => {
